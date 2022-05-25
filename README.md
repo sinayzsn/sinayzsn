@@ -6,7 +6,7 @@ you would make my day if you would leave a oppinion for my work and tell me what
 
 You can reach me via multiple ways:
 
-  1- linkdin: sina_yzsn
+  1- linkedin: sina_yzsn
   
   2- email: sina.yzsn@gmail.com
 
