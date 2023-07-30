@@ -7,7 +7,7 @@ sudo add-apt-repository ppa:deadsnakes/ppa -y
 sudo apt-get update -y
 
 # Install Python 3.10
-sudo apt-get install python3.10 -y
+sudo apt-get install python3.10 python3.10-venv -y
 
 # Update alternatives to make Python 3.10 the default version
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
