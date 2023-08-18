@@ -2,9 +2,11 @@ from os import system as sys
 
 
 # Configure git editor
-def git_config(editor):
+def git_config(editor, shell):
     sys(f"git config --global core.editor '{editor}'")
-
+    sys("""echo 'alias git-log = "git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) "
+        "%C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all"' > ~/.bashrc """
+        )
 
 # Configure the pip usage in Iran
 # The shell could be one the following:
@@ -20,5 +22,5 @@ alias pip_china5="pip install --trusted-host http://pypi.douban.com -i http://py
 alias pip_china6="pip install --trusted-host http://pypi.sdutlinux.org -i http://pypi.sdutlinux.org/ "
 alias pip_china7="pip install --trusted-host http://pypi.hustunique.com -i http://pypi.hustunique.com/ "
 '''
-    sys(f"echo {piplist} > {shell}")
+    sys(f"echo {piplist} >> {shell}")
 
